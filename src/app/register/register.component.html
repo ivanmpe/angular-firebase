@@ -1,0 +1,14 @@
+<div>
+  <br />
+  <div class="logo"></div>
+  <div class="login-block">
+      <h1>Cadastro</h1>
+      <form #f="ngForm" (submit)="form_cadastro(f)" >
+      <input type="text"  required ngModel placeholder="Login" id="username" name="email" />
+      <input type="password" id="password" required ngModel placeholder="Senha"  name="password" />
+      <input type="password"  id="password" required ngModel placeholder="Repita Senha"  name="password2" />
+      <button class="submit"  class="btn btn-primary btn-success" > Cadastrar </button>
+      </form>
+  </div>
+  <br />
+</div>

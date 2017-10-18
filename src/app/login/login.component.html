@@ -1,0 +1,17 @@
+<body bgcolor="FF0000">
+<div >
+  <br />
+  <div class="logo"></div>
+  <div class="login-block">
+      <h1>Login</h1>
+      <form #f="ngForm" (submit)="form_login(f)" >
+      <input type="text" id="username"  placeholder="Login" required ngModel name="email" />
+      <input type="password"  id="password" placeholder="Senha" required ngModel name="password" />
+      <button type="submit"   class="btn btn-primary btn-primary" >Entrar</button>
+      <button type="button" [routerLink]="['cadastro']" class="btn btn-primary btn-info"> Cadastrar </button>
+    </form>
+
+  </div>
+  <br />
+</div>
+</body>

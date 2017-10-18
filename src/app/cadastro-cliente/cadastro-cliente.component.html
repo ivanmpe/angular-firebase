@@ -1,0 +1,30 @@
+<button type="button"(click)="form_logout()"  class="btn btn-primary btn-primary" >
+  <span class="glyphicon glyphicon-user"> </span> Logout
+</button>
+<div>
+  <br />
+  <div class="logo"></div>
+  <div class="login-block">
+    <h1> Cadastro de Clientes </h1>
+    <form #f="ngForm" (submit)="form_submit(f)" >
+      <input type="text" ngModel name="nome" placeholder="Nome">
+      <br />
+      <input type="text" ngModel name="cpf" placeholder="Cpf">
+      <br />
+      <input type="text" ngModel name="rg" placeholder="RG">
+      <br />
+      <input type="text" ngModel name="rua" placeholder="Rua">
+      <br />
+      <input type="text" ngModel name="bairro" placeholder="Bairro">
+      <br />
+      <input type="text" ngModel name="cidade" placeholder="Cidade">
+      <br />
+      <br />
+      <button class="submit" type="submit"> Cadastrar </button>
+    </form>
+  </div>
+  <br />
+</div>
+<app-cadastro-produto></app-cadastro-produto>
+<app-lista-produtos></app-lista-produtos>
+<app-lista-clientes></app-lista-clientes>

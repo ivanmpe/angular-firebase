@@ -1,0 +1,30 @@
+<div class="fundo">
+<br>
+<div class="container">
+    <div class="row">
+        <div class="">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                  Lista Produtos
+                </div>
+                <div class="panel-body">
+                    <ul class="list-group">
+                        <li class="list-group-item" *ngFor="let p of produto| async">
+                              {{  ' nome: ' + p.name+ ' valorUnitario: ' + p.valor + ' peso: ' + p.peso  }}
+                          </li>
+
+                    </ul>
+                </div>
+                <div class="panel-footer">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6>
+                                Total <span class="label label-info"> {{(produto | async)?.length}} Produtos  </span></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

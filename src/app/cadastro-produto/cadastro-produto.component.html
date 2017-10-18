@@ -1,0 +1,20 @@
+
+<div >
+  <br />
+  <div class="logo"></div>
+  <div class="login-block">
+    <h1> Cadastro de Produto </h1>
+    <form #f="ngForm" (submit)="form_submit(f)" >
+      <input type="text" ngModel name="name" placeholder="Nome">
+      <br />
+      <br />
+      <input type="text" ngModel name="peso" placeholder="Peso">
+      <br />
+      <br />
+      <input type="text" ngModel name="valor" placeholder="Valor Unitario">
+      <br />
+      <br />
+      <button class="submit" type="submit"> Cadastrar </button>
+    </form>
+  <br />
+</div>
