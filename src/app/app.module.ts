@@ -15,12 +15,7 @@ import {AppRoutingModule} from './app.routing.module';
 
 
 var config = {
-    apiKey: "AIzaSyCjK6mVc3tki_yUzzuc0WXVIEbXmmwbSJk",
-    authDomain: "fir-crud-21bb7.firebaseapp.com",
-    databaseURL: "https://fir-crud-21bb7.firebaseio.com",
-    projectId: "fir-crud-21bb7",
-    storageBucket: "fir-crud-21bb7.appspot.com",
-    messagingSenderId: "129388864419"
+    //firebase token
   };
 
 
